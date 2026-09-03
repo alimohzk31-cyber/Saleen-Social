@@ -4,7 +4,9 @@
  */
 
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { Network } from '@capacitor/network';
+import { WifiOff, RefreshCw } from 'lucide-react';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
