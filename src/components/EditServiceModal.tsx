@@ -103,7 +103,7 @@ export default function EditServiceModal({ service, onClose, onSaved }: Props) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm overflow-y-auto">
-      <div className={`w-full max-w-md border rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-200 my-8 bg-[var(--surface-elevated)] border-[var(--border)]`}>
+      <div className={`w-full max-w-md sm:max-w-lg border rounded-2xl shadow-2xl overflow-y-auto overflow-x-hidden overscroll-contain my-8 max-h-[calc(100vh-80px)] animate-in fade-in zoom-in duration-200 bg-[var(--surface-elevated)] border-[var(--border)]`}>
         <div className={`p-4 border-b flex items-center justify-between sticky top-0 z-10 bg-[var(--surface-elevated)] border-[var(--border)]`}>
           <h2 className={`text-lg font-bold flex items-center gap-2 text-[var(--text-primary)]`}>
             <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
@@ -111,8 +111,8 @@ export default function EditServiceModal({ service, onClose, onSaved }: Props) {
             </div>
             {t('edit_service')}
           </h2>
-          <button onClick={onClose} className={`p-1 rounded-lg transition-colors text-[var(--text-muted)] hover:text-[var(--text-primary)] hover:bg-[var(--accent-soft)]`}>
-            <X className="w-5 h-5" />
+          <button onClick={onClose} className={`p-2 rounded-xl transition-all text-[var(--text-muted)] hover:text-red-500 hover:bg-red-500/10`}>
+            <X className="w-6 h-6" />
           </button>
         </div>
         
