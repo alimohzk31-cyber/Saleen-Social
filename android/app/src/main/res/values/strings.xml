@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Saleen Service — سالين سيرفس</string>
+    <string name="title_activity_main">Saleen Service — سالين سيرفس</string>
+    <string name="package_name">com.saleen.service</string>
+    <string name="custom_url_scheme">com.saleen.service</string>
+</resources>
